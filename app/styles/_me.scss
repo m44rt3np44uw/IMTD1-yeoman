@@ -1,0 +1,21 @@
+@import "colors";
+
+#me {
+  padding-top: 75px;
+  padding-bottom: 125px;
+
+  h3, p {
+    text-align: center;
+  }
+
+  h3 {
+    font-weight: 700;
+    color: $kleur_5;
+  }
+
+  p {
+    color: $kleur_4;
+    line-height: 225%;
+  }
+}
+

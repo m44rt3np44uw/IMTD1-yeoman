@@ -1,0 +1,51 @@
+@import "colors";
+
+footer {
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: $kleur_1;
+
+  h4 {
+    font-weight: 700;
+  }
+
+  h5 {
+
+    a, a:hover, a:active, a:visited, a:focus {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h5, h6 {
+    font-weight: 300;
+  }
+
+  h4, h5, h6 {
+    text-align: center;
+    color: white;
+    line-height: 150%;
+  }
+
+  p, a {
+    text-align: center;
+    color: $kleur_5;
+    margin-top: 50px;
+  }
+
+  p {
+    a {
+      &:hover,
+      &:active,
+      &:visited,
+      &:focus {
+        color: $kleur_5;
+      }
+    }
+  }
+}

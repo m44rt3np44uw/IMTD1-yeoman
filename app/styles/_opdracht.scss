@@ -1,0 +1,68 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "colors";
+
+.opdracht {
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 25px;
+
+    a {
+      color: $kleur_5;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    color: $kleur_4;
+    line-height: 225%;
+  }
+
+  .btn, .btn:hover, .btn:active, .btn:visited, .btn:focus {
+    margin-top: 30px;
+    background-color: transparent;
+    border-color: $kleur_5;
+  }
+
+  &.odd {
+    background-color: $kleur_2;
+
+    p {
+      color: white;
+    }
+
+    img {
+      -webkit-filter: drop-shadow(0 0 25px $gray-base);
+      filter:         drop-shadow(0 0 25px $gray-base);
+    }
+  }
+
+  &.even {
+
+    .img-responsive.img-rounded, .carousel {
+      -webkit-filter: drop-shadow(0 0 25px $gray-light);
+      filter:         drop-shadow(0 0 25px $gray-light);
+    }
+
+    .btn {
+      color: $kleur_4;
+    }
+
+    #opdracht_4_slider {
+
+      .right, .left {
+        background-image: none;
+      }
+    }
+  }
+}
