@@ -1,3 +1,4 @@
+rm -rf docs/
 gulp build
 mv dist/ docs/
 cp CNAME docs/
