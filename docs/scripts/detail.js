@@ -1,1 +1,0 @@
-"use strict";$(document).ready(function(){$("#opdracht_4_slider").carousel({interval:2e4}),$(function(){$('[data-toggle="tooltip"]').tooltip()})});
