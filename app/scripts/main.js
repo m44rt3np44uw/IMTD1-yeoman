@@ -21,8 +21,11 @@ $(document).ready(function () {
     }
   };
 
+  var key = 'gerrie';
+  var value = 'verstrooid';
+
   // Easter Egg
-  if($.urlParam('gerrie') != null && $.urlParam('gerrie') == 'verstrooid') {
+  if($.urlParam(key) != null && $.urlParam(key) == value) {
 
     // Comix Sans MS is echt mooi.
     $('h1, h2, h3, h4, h5, h6, p, a, li, .tooltip-inner').css({
@@ -42,7 +45,7 @@ $(document).ready(function () {
       if(current_url.endsWith('.html')) {
 
         // Voeg dan de easteregg toe.
-        $(url).attr('href', current_url + '?gerrie=verstrooid');
+        $(url).attr('href', current_url + '?' + key + '=' + value);
       }
     });
   }
