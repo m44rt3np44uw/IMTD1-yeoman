@@ -167,7 +167,13 @@ gulp.task('wiredep', () => {
     .pipe(gulp.dest('app'));
 });
 
-gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'opdrachten'], () => {
+gulp.task('zip', () => {
+  return gulp.src('docs/**/*')
+    .pipe($.zip('s1094420.zip'))
+    .pipe(gulp.dest('.'));
+});
+
+gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras', 'opdrachten', 'zip'], () => {
   return gulp.src('dist/**/*').pipe($.size({title: 'build', gzip: true}));
 });
 
