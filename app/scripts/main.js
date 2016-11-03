@@ -6,9 +6,10 @@ $(document).ready(function () {
   });
 
   // Tooltips
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
+  var $tooltips = $('[data-toggle="tooltip"]');
+
+  // Tooltips
+  $tooltips.tooltip();
 
   // http://stackoverflow.com/a/25359264/2940668
   $.urlParam = function(name){
@@ -28,8 +29,13 @@ $(document).ready(function () {
   if($.urlParam(key) != null && $.urlParam(key) == value) {
 
     // Comix Sans MS is echt mooi.
-    $('h1, h2, h3, h4, h5, h6, p, a, li, .tooltip-inner').css({
+    $('h1, h2, h3, h4, h5, h6, p, a, li').css({
       'font-family': 'Comic Sans MS'
+    });
+
+    // Zelfs de tooltips moeten mooi worden.
+    $tooltips.on('inserted.bs.tooltip', function () {
+      $('.tooltip-inner').css('font-family', 'Comic Sans MS');
     });
 
     // Alle urls
