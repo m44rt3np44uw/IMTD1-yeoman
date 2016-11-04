@@ -168,8 +168,12 @@ gulp.task('wiredep', () => {
 });
 
 gulp.task('zip', () => {
+  gulp.src('app/opdrachten/**/*')
+    .pipe($.zip('s1094220-IMTD1-opdrachten.zip'))
+    .pipe(gulp.dest('.'));
+
   return gulp.src('docs/**/*')
-    .pipe($.zip('s1094420.zip'))
+    .pipe($.zip('s1094420-IMTD1-portfolio.zip'))
     .pipe(gulp.dest('.'));
 });
 
