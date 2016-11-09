@@ -21,6 +21,7 @@ rm s1094220-IMTD1/development/.gitignore
 
 ## Verwijder bestanden die niet ingeleverd hoeven te worden.
 rm s1094220-IMTD1/development/CNAME
+rm s1094220-IMTD1/development/app/robots.txt
 rm s1094220-IMTD1/development/inlever.sh
 rm s1094220-IMTD1/development/make.sh
 
@@ -29,6 +30,10 @@ cp -R app/opdrachten/ s1094220-IMTD1/opdrachten
 
 ## Kopieer de portfolio naar de inlever map.
 cp -R docs/ s1094220-IMTD1/portfolio
+
+## Verwijder ook bestanden uit de portfolio map.
+rm s1094220-IMTD1/portfolio/CNAME
+rm s1094220-IMTD1/portfolio/robots.txt
 
 ## Kopieer de README.md naar de zip.
 cp README.md s1094220-IMTD1/
